@@ -3,12 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="main.js"></script>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+    
+        body {
+            background-color: #f0f2f5;
+            padding: 20px;
+        }
+    
+        header {
+            background-color: #1c0063;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+    
+        .contener {
+            background: white;
+            max-width: 400px;
+            margin: auto;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+    
+        form h1 {
+            margin-bottom: 20px;
+            color: #333;
+            text-align: center;
+        }
+    
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+    
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    
+        .btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #100062;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    
+        .btn:hover {
+            background-color: #04042c;
+        }
+    
+        .msg {
+            margin-bottom: 15px;
+            color: rgb(4, 12, 97);
+            text-align: center;
+        }
+        .error {
+    background: rgba(159, 11, 11, 0.79);
+    color: white;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+    </style>
+    
     <title>Document</title>
 </head>
 <body>
     <header>
-        <h1>js for biggner</h1>
+        <h1>ahmad shanti</h1>
     </header>
     <section class="contener">
         <form id="my-form">
@@ -16,15 +97,16 @@
             <div class="msg"></div>
             <div>
                 <label for="name">name:</label>
-                <input type="text" id="name">
+                <input type="text" id="name" placeholder="Enter your name">
             </div>
             <div>
-            <label for="Emile">Emile:</label>
-            <input type="text" id="name">
+                <label for="email">Email:</label>
+                <input type="text" id="email" placeholder="Enter your email">
         </div>
         <input type="submit" value="submit" class="btn">
         </form>
     </section>
+    <script src="main.js" defer></script>
 
 </body>
 </html>
